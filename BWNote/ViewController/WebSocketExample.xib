@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebSocketExample" customModule="RxDesignExample" customModuleProvider="target">
+            <connections>
+                <outlet property="connectBtn1" destination="uie-mK-oS9" id="Emb-lt-X5H"/>
+                <outlet property="connectbtn2" destination="ciF-Ys-Mh7" id="s7a-yG-iVk"/>
+                <outlet property="sendMessage1" destination="Jt3-OH-nnH" id="WiM-mQ-551"/>
+                <outlet property="sendMessage2" destination="seY-Qf-ngo" id="CpD-6r-j7q"/>
+                <outlet property="showLabel1" destination="GxS-QO-Die" id="jcH-UZ-E7D"/>
+                <outlet property="showLabel2" destination="BBE-c4-mb8" id="zc4-5i-vh0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uie-mK-oS9">
+                    <rect key="frame" x="15" y="59" width="68" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Gw8-lA-GEQ"/>
+                    </constraints>
+                    <state key="normal" title="用户1连接"/>
+                    <connections>
+                        <action selector="clickOntheConnect1:" destination="-1" eventType="touchUpInside" id="nZo-wx-bHL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxS-QO-Die">
+                    <rect key="frame" x="30" y="119" width="354" height="100"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="1Yq-DQ-uvJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jt3-OH-nnH">
+                    <rect key="frame" x="15" y="234" width="384" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Lrr-xI-wKN"/>
+                    </constraints>
+                    <state key="normal" title="发送helloword"/>
+                    <connections>
+                        <action selector="clickOntheSendMessage1:" destination="-1" eventType="touchUpInside" id="46e-qr-RYz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-Ys-Mh7">
+                    <rect key="frame" x="15" y="318" width="71" height="30"/>
+                    <state key="normal" title="用户2连接"/>
+                    <connections>
+                        <action selector="clickOntheConnect2:" destination="-1" eventType="touchUpInside" id="2lo-dT-0Ha"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBE-c4-mb8">
+                    <rect key="frame" x="30" y="363" width="354" height="100"/>
+                    <color key="backgroundColor" red="0.90236097569999996" green="0.16397535799999999" blue="0.42391955850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="obw-6a-afr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seY-Qf-ngo">
+                    <rect key="frame" x="15" y="478" width="384" height="40"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="v2S-2S-dYi"/>
+                    </constraints>
+                    <state key="normal" title="发送我是用户2"/>
+                    <connections>
+                        <action selector="clickOntheSendMessage2:" destination="-1" eventType="touchUpInside" id="MIY-y2-N6c"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="BBE-c4-mb8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="0UH-RS-LF5"/>
+                <constraint firstItem="seY-Qf-ngo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="3i9-fP-eUo"/>
+                <constraint firstItem="uie-mK-oS9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="5Ax-MB-bmn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GxS-QO-Die" secondAttribute="trailing" constant="30" id="9tJ-IV-fQz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BBE-c4-mb8" secondAttribute="trailing" constant="30" id="GTs-vm-Eyx"/>
+                <constraint firstItem="ciF-Ys-Mh7" firstAttribute="top" secondItem="Jt3-OH-nnH" secondAttribute="bottom" constant="40" id="HoI-Y7-x4k"/>
+                <constraint firstItem="ciF-Ys-Mh7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="JKe-cn-vv0"/>
+                <constraint firstItem="uie-mK-oS9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="KfB-ki-6uT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jt3-OH-nnH" secondAttribute="trailing" constant="15" id="NJi-Xf-MrU"/>
+                <constraint firstItem="seY-Qf-ngo" firstAttribute="top" secondItem="BBE-c4-mb8" secondAttribute="bottom" constant="15" id="YnU-yf-8B5"/>
+                <constraint firstItem="Jt3-OH-nnH" firstAttribute="top" secondItem="GxS-QO-Die" secondAttribute="bottom" constant="15" id="a7c-PL-RnU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="seY-Qf-ngo" secondAttribute="trailing" constant="15" id="b4N-LU-E4K"/>
+                <constraint firstItem="BBE-c4-mb8" firstAttribute="top" secondItem="ciF-Ys-Mh7" secondAttribute="bottom" constant="15" id="nXP-lT-sP2"/>
+                <constraint firstItem="Jt3-OH-nnH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="sP4-Fj-u5p"/>
+                <constraint firstItem="GxS-QO-Die" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="wcp-BT-T6z"/>
+                <constraint firstItem="GxS-QO-Die" firstAttribute="top" secondItem="uie-mK-oS9" secondAttribute="bottom" constant="20" id="zWT-od-oUG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-88.405797101449281" y="67.633928571428569"/>
+        </view>
+    </objects>
+</document>
