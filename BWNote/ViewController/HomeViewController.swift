@@ -3,7 +3,7 @@
 //  RxDesignExample
 //
 //  Created by bairdweng on 2020/8/21.
-//  Copyright © 2020 sssshuayaohuayao. All rights reserved.
+//  Copyright © 2020 apple. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,17 @@ import SnapKit
 import SVProgressHUD
 class HomeViewController: BaseViewController {
     let dataTableView = UITableView()
-    let dataSources = ["runtime交换方法","关于copy","算法","grpc","websocket","1000个websocket"]
+    let dataSources = [
+        "Exchange method",
+        "About copy",
+        "Algorithm",
+        "Grpc",
+        "Websocket",
+        "1000 websocket",
+        "Load and initialize",
+        "Memory layout",
+        "What is a block?"
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
@@ -115,7 +125,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
             AboutCopy().hello()
             break
         case 2:
-            let vc = SuanFaViewController()
+            let vc = AlgorithmViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 3:
@@ -125,9 +135,23 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource {
         case 4:
             let websocket = WebSocketExample()
             self.navigationController?.pushViewController(websocket, animated: true)
+            break
         case 5:
             let web = WebSocketViewController()
             self.navigationController?.pushViewController(web, animated: true)
+            break
+        case 6:
+            let vc = LoadAndInitializeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 7:
+            let vc = MemoryLayoutViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 8:
+            let vc = BlockViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
         default:
             break
         }

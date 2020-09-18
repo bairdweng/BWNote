@@ -1,5 +1,5 @@
 //
-//  WebSocketViewController.swift
+//  GrpcViewController.swift
 //  RxDesignExample
 //
 //  Created by bairdweng on 2020/8/28.
@@ -7,14 +7,17 @@
 //
 
 import UIKit
-import Starscream
-import Async
-class WebSocketViewController: BaseViewController {
-    var sockets:[WebSocket] = [];
+import gRPC_Swift
+import NIO
+import NIOTransportServices
+import SnapKit
+class GrpcViewController: BaseViewController {
+    let greeter = Helloworld_GreeterClient(channel: ClientConnection.insecure(group: NIOTSEventLoopGroup()).connect(host: "118.89.36.207", port: 50051))
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         let sendMessageBtn = UIButton()
-        sendMessageBtn.setTitle("+200连接", for: .normal)
+        sendMessageBtn.setTitle("发送消息", for: .normal)
         sendMessageBtn.backgroundColor = .red
         self.view.addSubview(sendMessageBtn)
         sendMessageBtn.snp.makeConstraints { (make) in
@@ -28,33 +31,28 @@ class WebSocketViewController: BaseViewController {
         
         // Do any additional setup after loading the view.
     }
-    func initWebSock()->WebSocket {
-        var request = URLRequest(url: URL(string: "ws://127.0.0.1:5322/websocket?a=2")!)
-        request.timeoutInterval = 5
-        let socket = WebSocket(request: request)
-        socket.onEvent = {(event) in
-            print("========")
-        }
-        socket.connect()
-        return socket
-    }
     func sendMessage() {
-        for _ in 0..<1000 {
-            sockets.append(initWebSock())
+        let request1 = Helloworld_HelloRequest.with { $0.name = "卧槽你大爷爷" }
+        greeter.sayHello(request1).response.whenComplete { (result) in
+            switch result {
+            case .failure(let error):
+                debugPrint(error)
+                
+            case .success(let response):
+                debugPrint(response)
+            }
         }
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        for sock in sockets {
-            sock.disconnect()
-        }
-    }
+    
+    
     /*
      // MARK: - Navigation
+     
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
      }
      */
+    
 }

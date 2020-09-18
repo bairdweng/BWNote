@@ -1,23 +1,33 @@
 //
-//  BaseViewController.swift
-//  RxDesignExample
+//  LoadAndInitializeViewController.swift
+//  BWNote
 //
-//  Created by bairdweng on 2020/8/21.
+//  Created by bairdweng on 2020/9/17.
 //  Copyright © 2020 apple. All rights reserved.
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
-class BaseViewController: UIViewController {
-    let disposeBag = DisposeBag()
+
+class LoadAndInitializeViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+
         // Do any additional setup after loading the view.
     }
-    
 
+    @IBAction func clickOntheExample1(_ sender: Any) {
+        LoadExample1().hello()
+    }
+    
+    @IBAction func clickOntheChdrenExample1(_ sender: Any) {
+        ChildrenLoadExample1().hello()
+    }
+    
+    @IBAction func clickOntheGrandSonExample1(_ sender: Any) {
+        GrandSonExample1().hello()
+    }
+    
     /*
     // MARK: - Navigation
 

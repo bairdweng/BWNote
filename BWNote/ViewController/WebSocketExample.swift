@@ -3,7 +3,7 @@
 //  RxDesignExample
 //
 //  Created by bairdweng on 2020/8/31.
-//  Copyright © 2020 sssshuayaohuayao. All rights reserved.
+//  Copyright © 2020 apple. All rights reserved.
 //
 
 import UIKit

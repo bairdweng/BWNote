@@ -7,6 +7,11 @@
 #import "WengPerson.h"
 #import "ISAPoint.h"
 #import "AboutCopy.h"
+#import "LoadExample1.h"
+#import "ChildrenLoadExample1.h"
+#import "GrandSonExample1.h"
+#import "MemoryLayout.h"
+#import "CircularReference.h"
 #define SwizzleMethod(class, originalSelector, swizzledSelector) {              \
     Method originalMethod = class_getInstanceMethod(class, (originalSelector)); \
     Method swizzledMethod = class_getInstanceMethod(class, (swizzledSelector)); \

@@ -8,9 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		AC355C09A7463D1CF320A0B5 /* Pods_BWNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758BE68556DFEE22FE09EEA6 /* Pods_BWNote.framework */; };
+		DA05148D2514D4AF00D5BCE7 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05148C2514D4AF00D5BCE7 /* BlockViewController.swift */; };
+		DA0514922514D64F00D5BCE7 /* CircularReference.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0514912514D64F00D5BCE7 /* CircularReference.m */; };
 		DA073AB3250A049800A1C962 /* BWBinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA073AB2250A049800A1C962 /* BWBinarySearch.swift */; };
 		DA073AC8250B7F6000A1C962 /* BWMergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA073AC7250B7F6000A1C962 /* BWMergeSort.swift */; };
-		DA073AED2510DC2800A1C962 /* BoyerMoore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA073AEC2510DC2800A1C962 /* BoyerMoore.swift */; };
+		DA073AED2510DC2800A1C962 /* BWBoyerMoore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA073AEC2510DC2800A1C962 /* BWBoyerMoore.swift */; };
+		DA073B2325130C5F00A1C962 /* LoadExample1.m in Sources */ = {isa = PBXBuildFile; fileRef = DA073B2225130C5F00A1C962 /* LoadExample1.m */; };
+		DA073B26251311C300A1C962 /* LoadExample1+catgory1.m in Sources */ = {isa = PBXBuildFile; fileRef = DA073B25251311C300A1C962 /* LoadExample1+catgory1.m */; };
+		DA073B29251311D200A1C962 /* LoadExample1+catgory2.m in Sources */ = {isa = PBXBuildFile; fileRef = DA073B28251311D200A1C962 /* LoadExample1+catgory2.m */; };
+		DA073B2C2513150100A1C962 /* ChildrenLoadExample1.m in Sources */ = {isa = PBXBuildFile; fileRef = DA073B2B2513150100A1C962 /* ChildrenLoadExample1.m */; };
+		DA073BD3251339DC00A1C962 /* LoadAndInitializeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA073BD1251339DC00A1C962 /* LoadAndInitializeViewController.swift */; };
+		DA073BD4251339DC00A1C962 /* LoadAndInitializeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA073BD2251339DC00A1C962 /* LoadAndInitializeViewController.xib */; };
+		DA073BDD25133E3C00A1C962 /* GrandSonExample1.m in Sources */ = {isa = PBXBuildFile; fileRef = DA073BDC25133E3C00A1C962 /* GrandSonExample1.m */; };
+		DA073BE12513561000A1C962 /* MemoryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA073BE02513561000A1C962 /* MemoryLayout.m */; };
+		DA073BE4251368A500A1C962 /* MemoryLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA073BE2251368A500A1C962 /* MemoryLayoutViewController.swift */; };
+		DA073BE5251368A500A1C962 /* MemoryLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA073BE3251368A500A1C962 /* MemoryLayoutViewController.xib */; };
 		DA7EF6FB24EF73DE00F8AD98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF6FA24EF73DE00F8AD98 /* AppDelegate.swift */; };
 		DA7EF70224EF73DE00F8AD98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7EF70024EF73DE00F8AD98 /* Main.storyboard */; };
 		DA7EF70424EF73E200F8AD98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7EF70324EF73E200F8AD98 /* Assets.xcassets */; };
@@ -35,7 +47,7 @@
 		DA7EF76D24F3C75000F8AD98 /* AboutCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF76C24F3C75000F8AD98 /* AboutCopy.m */; };
 		DA7EF77124F4BE5100F8AD98 /* BWStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF77024F4BE5100F8AD98 /* BWStack.swift */; };
 		DA7EF77424F4FF0700F8AD98 /* BWQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF77324F4FF0700F8AD98 /* BWQueue.swift */; };
-		DA7EF77624F5029600F8AD98 /* SuanFaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF77524F5029600F8AD98 /* SuanFaViewController.swift */; };
+		DA7EF77624F5029600F8AD98 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF77524F5029600F8AD98 /* AlgorithmViewController.swift */; };
 		DA7EF77924F6074100F8AD98 /* BWInsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF77824F6074100F8AD98 /* BWInsertionSort.swift */; };
 		DA7EF77E24F8A00100F8AD98 /* hello.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF77C24F8A00100F8AD98 /* hello.grpc.swift */; };
 		DA7EF77F24F8A00100F8AD98 /* hello.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF77D24F8A00100F8AD98 /* hello.pb.swift */; };
@@ -50,9 +62,28 @@
 		44652FEC3FCAE606FAAC9C1A /* Pods-RxDesignExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDesignExample.release.xcconfig"; path = "Target Support Files/Pods-RxDesignExample/Pods-RxDesignExample.release.xcconfig"; sourceTree = "<group>"; };
 		52920BEBC3E870F571A5EEAF /* Pods-BWNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BWNote.debug.xcconfig"; path = "Target Support Files/Pods-BWNote/Pods-BWNote.debug.xcconfig"; sourceTree = "<group>"; };
 		758BE68556DFEE22FE09EEA6 /* Pods_BWNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BWNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA05148C2514D4AF00D5BCE7 /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
+		DA0514902514D64F00D5BCE7 /* CircularReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularReference.h; sourceTree = "<group>"; };
+		DA0514912514D64F00D5BCE7 /* CircularReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularReference.m; sourceTree = "<group>"; };
 		DA073AB2250A049800A1C962 /* BWBinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWBinarySearch.swift; sourceTree = "<group>"; };
 		DA073AC7250B7F6000A1C962 /* BWMergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWMergeSort.swift; sourceTree = "<group>"; };
-		DA073AEC2510DC2800A1C962 /* BoyerMoore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMoore.swift; sourceTree = "<group>"; };
+		DA073AEC2510DC2800A1C962 /* BWBoyerMoore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWBoyerMoore.swift; sourceTree = "<group>"; };
+		DA073B2125130C5F00A1C962 /* LoadExample1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadExample1.h; sourceTree = "<group>"; };
+		DA073B2225130C5F00A1C962 /* LoadExample1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadExample1.m; sourceTree = "<group>"; };
+		DA073B24251311C300A1C962 /* LoadExample1+catgory1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadExample1+catgory1.h"; sourceTree = "<group>"; };
+		DA073B25251311C300A1C962 /* LoadExample1+catgory1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LoadExample1+catgory1.m"; sourceTree = "<group>"; };
+		DA073B27251311D200A1C962 /* LoadExample1+catgory2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadExample1+catgory2.h"; sourceTree = "<group>"; };
+		DA073B28251311D200A1C962 /* LoadExample1+catgory2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LoadExample1+catgory2.m"; sourceTree = "<group>"; };
+		DA073B2A2513150100A1C962 /* ChildrenLoadExample1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildrenLoadExample1.h; sourceTree = "<group>"; };
+		DA073B2B2513150100A1C962 /* ChildrenLoadExample1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChildrenLoadExample1.m; sourceTree = "<group>"; };
+		DA073BD1251339DC00A1C962 /* LoadAndInitializeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAndInitializeViewController.swift; sourceTree = "<group>"; };
+		DA073BD2251339DC00A1C962 /* LoadAndInitializeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadAndInitializeViewController.xib; sourceTree = "<group>"; };
+		DA073BDB25133E3C00A1C962 /* GrandSonExample1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrandSonExample1.h; sourceTree = "<group>"; };
+		DA073BDC25133E3C00A1C962 /* GrandSonExample1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrandSonExample1.m; sourceTree = "<group>"; };
+		DA073BDF2513561000A1C962 /* MemoryLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryLayout.h; sourceTree = "<group>"; };
+		DA073BE02513561000A1C962 /* MemoryLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLayout.m; sourceTree = "<group>"; };
+		DA073BE2251368A500A1C962 /* MemoryLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLayoutViewController.swift; sourceTree = "<group>"; };
+		DA073BE3251368A500A1C962 /* MemoryLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoryLayoutViewController.xib; sourceTree = "<group>"; };
 		DA7EF6F724EF73DE00F8AD98 /* BWNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7EF6FA24EF73DE00F8AD98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7EF70124EF73DE00F8AD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +118,7 @@
 		DA7EF76C24F3C75000F8AD98 /* AboutCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutCopy.m; sourceTree = "<group>"; };
 		DA7EF77024F4BE5100F8AD98 /* BWStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWStack.swift; sourceTree = "<group>"; };
 		DA7EF77324F4FF0700F8AD98 /* BWQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWQueue.swift; sourceTree = "<group>"; };
-		DA7EF77524F5029600F8AD98 /* SuanFaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuanFaViewController.swift; sourceTree = "<group>"; };
+		DA7EF77524F5029600F8AD98 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		DA7EF77824F6074100F8AD98 /* BWInsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWInsertionSort.swift; sourceTree = "<group>"; };
 		DA7EF77C24F8A00100F8AD98 /* hello.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hello.grpc.swift; sourceTree = "<group>"; };
 		DA7EF77D24F8A00100F8AD98 /* hello.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hello.pb.swift; sourceTree = "<group>"; };
@@ -129,28 +160,68 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA073AB1250A047C00A1C962 /* 二分法查找 */ = {
+		DA05148B2514D49A00D5BCE7 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				DA05148C2514D4AF00D5BCE7 /* BlockViewController.swift */,
+				DA0514902514D64F00D5BCE7 /* CircularReference.h */,
+				DA0514912514D64F00D5BCE7 /* CircularReference.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		DA073AB1250A047C00A1C962 /* BinarySearch */ = {
 			isa = PBXGroup;
 			children = (
 				DA073AB2250A049800A1C962 /* BWBinarySearch.swift */,
 			);
-			path = "二分法查找";
+			path = BinarySearch;
 			sourceTree = "<group>";
 		};
-		DA073AC6250B7F4100A1C962 /* 归并排序 */ = {
+		DA073AC6250B7F4100A1C962 /* MergeSort */ = {
 			isa = PBXGroup;
 			children = (
 				DA073AC7250B7F6000A1C962 /* BWMergeSort.swift */,
 			);
-			path = "归并排序";
+			path = MergeSort;
 			sourceTree = "<group>";
 		};
-		DA073AEB2510DC0800A1C962 /* 字符串查找 */ = {
+		DA073AEB2510DC0800A1C962 /* BoyerMoore */ = {
 			isa = PBXGroup;
 			children = (
-				DA073AEC2510DC2800A1C962 /* BoyerMoore.swift */,
+				DA073AEC2510DC2800A1C962 /* BWBoyerMoore.swift */,
 			);
-			path = "字符串查找";
+			path = BoyerMoore;
+			sourceTree = "<group>";
+		};
+		DA073B2025130C3800A1C962 /* LoadInit */ = {
+			isa = PBXGroup;
+			children = (
+				DA073BD1251339DC00A1C962 /* LoadAndInitializeViewController.swift */,
+				DA073BD2251339DC00A1C962 /* LoadAndInitializeViewController.xib */,
+				DA073B2125130C5F00A1C962 /* LoadExample1.h */,
+				DA073B2225130C5F00A1C962 /* LoadExample1.m */,
+				DA073B24251311C300A1C962 /* LoadExample1+catgory1.h */,
+				DA073B25251311C300A1C962 /* LoadExample1+catgory1.m */,
+				DA073B27251311D200A1C962 /* LoadExample1+catgory2.h */,
+				DA073B28251311D200A1C962 /* LoadExample1+catgory2.m */,
+				DA073B2A2513150100A1C962 /* ChildrenLoadExample1.h */,
+				DA073B2B2513150100A1C962 /* ChildrenLoadExample1.m */,
+				DA073BDB25133E3C00A1C962 /* GrandSonExample1.h */,
+				DA073BDC25133E3C00A1C962 /* GrandSonExample1.m */,
+			);
+			path = LoadInit;
+			sourceTree = "<group>";
+		};
+		DA073BDE251355FC00A1C962 /* MemoryLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DA073BDF2513561000A1C962 /* MemoryLayout.h */,
+				DA073BE02513561000A1C962 /* MemoryLayout.m */,
+				DA073BE2251368A500A1C962 /* MemoryLayoutViewController.swift */,
+				DA073BE3251368A500A1C962 /* MemoryLayoutViewController.xib */,
+			);
+			path = MemoryLayout;
 			sourceTree = "<group>";
 		};
 		DA7EF6EE24EF73DE00F8AD98 = {
@@ -207,7 +278,6 @@
 				DA7EF71C24EFAFD800F8AD98 /* AppInfoViewController.swift */,
 				DA7EF71F24EFB06F00F8AD98 /* AppInfoViewController.xib */,
 				DA7EF72224EFB32600F8AD98 /* RecordViewController.swift */,
-				DA7EF78024F8A04E00F8AD98 /* GrpcViewController.swift */,
 				DA7EF78224F8FABC00F8AD98 /* WebSocketViewController.swift */,
 				DA7EF78624FCA6F900F8AD98 /* WebSocketExample.swift */,
 				DA7EF78724FCA6F900F8AD98 /* WebSocketExample.xib */,
@@ -252,24 +322,27 @@
 		DA7EF72C24EFD87F00F8AD98 /* OC */ = {
 			isa = PBXGroup;
 			children = (
-				DA7EF73F24EFF2D200F8AD98 /* example */,
+				DA7EF73F24EFF2D200F8AD98 /* Module */,
 				DA7EF72F24EFD8B500F8AD98 /* BWNote-Bridging-Header.h */,
 			);
 			path = OC;
 			sourceTree = "<group>";
 		};
-		DA7EF73F24EFF2D200F8AD98 /* example */ = {
+		DA7EF73F24EFF2D200F8AD98 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				DA7EF76A24F3C73D00F8AD98 /* copy */,
-				DA7EF76624F3BB6800F8AD98 /* isa指针 */,
-				DA7EF75F24F3B4BF00F8AD98 /* 点语法 */,
-				DA7EF75E24F392D300F8AD98 /* 方法交换 */,
+				DA05148B2514D49A00D5BCE7 /* Block */,
+				DA073BDE251355FC00A1C962 /* MemoryLayout */,
+				DA073B2025130C3800A1C962 /* LoadInit */,
+				DA7EF76A24F3C73D00F8AD98 /* Copy */,
+				DA7EF76624F3BB6800F8AD98 /* IsaPointer */,
+				DA7EF75F24F3B4BF00F8AD98 /* PointGrammar */,
+				DA7EF75E24F392D300F8AD98 /* ExchangeMethod */,
 			);
-			path = example;
+			path = Module;
 			sourceTree = "<group>";
 		};
-		DA7EF75E24F392D300F8AD98 /* 方法交换 */ = {
+		DA7EF75E24F392D300F8AD98 /* ExchangeMethod */ = {
 			isa = PBXGroup;
 			children = (
 				DA7EF74C24F358B900F8AD98 /* FatherViewController.h */,
@@ -279,10 +352,10 @@
 				DA7EF75B24F36C0500F8AD98 /* SonViewController+hello.h */,
 				DA7EF75C24F36C0500F8AD98 /* SonViewController+hello.m */,
 			);
-			path = "方法交换";
+			path = ExchangeMethod;
 			sourceTree = "<group>";
 		};
-		DA7EF75F24F3B4BF00F8AD98 /* 点语法 */ = {
+		DA7EF75F24F3B4BF00F8AD98 /* PointGrammar */ = {
 			isa = PBXGroup;
 			children = (
 				DA7EF76024F3B4D400F8AD98 /* Person.h */,
@@ -290,68 +363,69 @@
 				DA7EF76324F3B4DE00F8AD98 /* WengPerson.h */,
 				DA7EF76424F3B4DE00F8AD98 /* WengPerson.m */,
 			);
-			path = "点语法";
+			path = PointGrammar;
 			sourceTree = "<group>";
 		};
-		DA7EF76624F3BB6800F8AD98 /* isa指针 */ = {
+		DA7EF76624F3BB6800F8AD98 /* IsaPointer */ = {
 			isa = PBXGroup;
 			children = (
 				DA7EF76724F3BB7B00F8AD98 /* ISAPoint.h */,
 				DA7EF76824F3BB7B00F8AD98 /* ISAPoint.m */,
 			);
-			path = "isa指针";
+			path = IsaPointer;
 			sourceTree = "<group>";
 		};
-		DA7EF76A24F3C73D00F8AD98 /* copy */ = {
+		DA7EF76A24F3C73D00F8AD98 /* Copy */ = {
 			isa = PBXGroup;
 			children = (
 				DA7EF76B24F3C75000F8AD98 /* AboutCopy.h */,
 				DA7EF76C24F3C75000F8AD98 /* AboutCopy.m */,
 			);
-			path = copy;
+			path = Copy;
 			sourceTree = "<group>";
 		};
 		DA7EF76E24F4BE2400F8AD98 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				DA7EF77524F5029600F8AD98 /* SuanFaViewController.swift */,
-				DA073AEB2510DC0800A1C962 /* 字符串查找 */,
-				DA073AC6250B7F4100A1C962 /* 归并排序 */,
-				DA073AB1250A047C00A1C962 /* 二分法查找 */,
-				DA7EF77724F6072D00F8AD98 /* 插入排序 */,
-				DA7EF77224F4FECE00F8AD98 /* 队列优化 */,
-				DA7EF76F24F4BE2F00F8AD98 /* 栈 */,
+				DA7EF77524F5029600F8AD98 /* AlgorithmViewController.swift */,
+				DA073AEB2510DC0800A1C962 /* BoyerMoore */,
+				DA073AC6250B7F4100A1C962 /* MergeSort */,
+				DA073AB1250A047C00A1C962 /* BinarySearch */,
+				DA7EF77724F6072D00F8AD98 /* InsertionSort */,
+				DA7EF77224F4FECE00F8AD98 /* Queue */,
+				DA7EF76F24F4BE2F00F8AD98 /* Stack */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
 		};
-		DA7EF76F24F4BE2F00F8AD98 /* 栈 */ = {
+		DA7EF76F24F4BE2F00F8AD98 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
 				DA7EF77024F4BE5100F8AD98 /* BWStack.swift */,
 			);
-			path = "栈";
+			path = Stack;
 			sourceTree = "<group>";
 		};
-		DA7EF77224F4FECE00F8AD98 /* 队列优化 */ = {
+		DA7EF77224F4FECE00F8AD98 /* Queue */ = {
 			isa = PBXGroup;
 			children = (
 				DA7EF77324F4FF0700F8AD98 /* BWQueue.swift */,
 			);
-			path = "队列优化";
+			path = Queue;
 			sourceTree = "<group>";
 		};
-		DA7EF77724F6072D00F8AD98 /* 插入排序 */ = {
+		DA7EF77724F6072D00F8AD98 /* InsertionSort */ = {
 			isa = PBXGroup;
 			children = (
 				DA7EF77824F6074100F8AD98 /* BWInsertionSort.swift */,
 			);
-			path = "插入排序";
+			path = InsertionSort;
 			sourceTree = "<group>";
 		};
 		DA7EF77A24F89F9300F8AD98 /* Grpc */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EF78024F8A04E00F8AD98 /* GrpcViewController.swift */,
 				DA7EF77B24F89FC900F8AD98 /* Model */,
 			);
 			path = Grpc;
@@ -395,7 +469,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = sssshuayaohuayao;
 				TargetAttributes = {
 					DA7EF6F624EF73DE00F8AD98 = {
@@ -430,7 +504,9 @@
 				DA7EF78924FCA6F900F8AD98 /* WebSocketExample.xib in Resources */,
 				DA7EF70724EF73E200F8AD98 /* LaunchScreen.storyboard in Resources */,
 				DA7EF72124EFB06F00F8AD98 /* AppInfoViewController.xib in Resources */,
+				DA073BD4251339DC00A1C962 /* LoadAndInitializeViewController.xib in Resources */,
 				DA7EF70424EF73E200F8AD98 /* Assets.xcassets in Resources */,
+				DA073BE5251368A500A1C962 /* MemoryLayoutViewController.xib in Resources */,
 				DA7EF72A24EFC2C700F8AD98 /* RecordTableViewCell.xib in Resources */,
 				DA7EF70224EF73DE00F8AD98 /* Main.storyboard in Resources */,
 			);
@@ -485,34 +561,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA073B26251311C300A1C962 /* LoadExample1+catgory1.m in Sources */,
 				DA7EF76D24F3C75000F8AD98 /* AboutCopy.m in Sources */,
 				DA073AC8250B7F6000A1C962 /* BWMergeSort.swift in Sources */,
 				DA7EF6FB24EF73DE00F8AD98 /* AppDelegate.swift in Sources */,
 				DA7EF71024EF9C9800F8AD98 /* BaseViewController.swift in Sources */,
+				DA073B29251311D200A1C962 /* LoadExample1+catgory2.m in Sources */,
 				DA7EF78324F8FABC00F8AD98 /* WebSocketViewController.swift in Sources */,
 				DA7EF78824FCA6F900F8AD98 /* WebSocketExample.swift in Sources */,
 				DA7EF77924F6074100F8AD98 /* BWInsertionSort.swift in Sources */,
 				DA7EF76224F3B4D400F8AD98 /* Person.m in Sources */,
+				DA05148D2514D4AF00D5BCE7 /* BlockViewController.swift in Sources */,
 				DA7EF72524EFB70000F8AD98 /* RecordModel.swift in Sources */,
 				DA7EF77124F4BE5100F8AD98 /* BWStack.swift in Sources */,
+				DA0514922514D64F00D5BCE7 /* CircularReference.m in Sources */,
 				DA7EF77E24F8A00100F8AD98 /* hello.grpc.swift in Sources */,
-				DA7EF77624F5029600F8AD98 /* SuanFaViewController.swift in Sources */,
+				DA7EF77624F5029600F8AD98 /* AlgorithmViewController.swift in Sources */,
+				DA073BD3251339DC00A1C962 /* LoadAndInitializeViewController.swift in Sources */,
+				DA073B2325130C5F00A1C962 /* LoadExample1.m in Sources */,
 				DA7EF71624EF9F4300F8AD98 /* NetworkDataManage.swift in Sources */,
 				DA7EF76524F3B4DE00F8AD98 /* WengPerson.m in Sources */,
 				DA7EF72324EFB32600F8AD98 /* RecordViewController.swift in Sources */,
 				DA073AB3250A049800A1C962 /* BWBinarySearch.swift in Sources */,
 				DA7EF77424F4FF0700F8AD98 /* BWQueue.swift in Sources */,
 				DA7EF71324EF9CB800F8AD98 /* HomeViewController.swift in Sources */,
+				DA073BE4251368A500A1C962 /* MemoryLayoutViewController.swift in Sources */,
 				DA7EF78124F8A04E00F8AD98 /* GrpcViewController.swift in Sources */,
 				DA7EF75D24F36C0500F8AD98 /* SonViewController+hello.m in Sources */,
 				DA7EF71D24EFAFD800F8AD98 /* AppInfoViewController.swift in Sources */,
 				DA7EF75724F36A2E00F8AD98 /* SonViewController.m in Sources */,
 				DA7EF74E24F358B900F8AD98 /* FatherViewController.m in Sources */,
 				DA7EF76924F3BB7B00F8AD98 /* ISAPoint.m in Sources */,
+				DA073BE12513561000A1C962 /* MemoryLayout.m in Sources */,
 				DA7EF71824EFA9AE00F8AD98 /* AppListViewController.swift in Sources */,
 				DA7EF77F24F8A00100F8AD98 /* hello.pb.swift in Sources */,
-				DA073AED2510DC2800A1C962 /* BoyerMoore.swift in Sources */,
+				DA073B2C2513150100A1C962 /* ChildrenLoadExample1.m in Sources */,
+				DA073AED2510DC2800A1C962 /* BWBoyerMoore.swift in Sources */,
 				DA7EF72924EFC2C700F8AD98 /* RecordTableViewCell.swift in Sources */,
+				DA073BDD25133E3C00A1C962 /* GrandSonExample1.m in Sources */,
 				DA7EF71B24EFAD5800F8AD98 /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +651,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -625,6 +712,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
