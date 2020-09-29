@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CircularReference : NSObject
 - (void)willCircularReferenc;
 - (void)modifyValueTheBlockInside;
+- (void)theGlobalBlock;
+- (void)blockUseCopy;
 @end
 
 NS_ASSUME_NONNULL_END

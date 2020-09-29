@@ -6,16 +6,16 @@
 //  Copyright © 2020 apple. All rights reserved.
 //
 
-import UIKit
 import HandyJSON
+import UIKit
 
-struct RecordModel:HandyJSON {
-    var app_info:AppInfo?
-    var records:[RecordItem]?
+struct RecordModel: HandyJSON {
+    var app_info: AppInfo?
+    var records: [RecordItem]?
 }
 
-struct RecordItem:HandyJSON {
-    var CreatedAt:String?
-    var id:String?
-    var ip:String?
+struct RecordItem: HandyJSON {
+    var CreatedAt: String?
+    var id: String?
+    var ip: String?
 }

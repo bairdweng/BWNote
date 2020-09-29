@@ -6,14 +6,14 @@
 //  Copyright © 2020 apple. All rights reserved.
 //
 
-import UIKit
 import HandyJSON
+import UIKit
 /// app信息
-struct AppInfo:HandyJSON {
-    var id:Int?
-    var app_id:String?
-    var app_name:String?
-    var status:String?
-    var bundle_id:String?
-    var is_crash:Bool?
+struct AppInfo: HandyJSON {
+    var id: Int?
+    var app_id: String?
+    var app_name: String?
+    var status: String?
+    var bundle_id: String?
+    var is_crash: Bool?
 }

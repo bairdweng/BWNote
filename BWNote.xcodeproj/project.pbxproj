@@ -23,6 +23,10 @@
 		DA073BE12513561000A1C962 /* MemoryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA073BE02513561000A1C962 /* MemoryLayout.m */; };
 		DA073BE4251368A500A1C962 /* MemoryLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA073BE2251368A500A1C962 /* MemoryLayoutViewController.swift */; };
 		DA073BE5251368A500A1C962 /* MemoryLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA073BE3251368A500A1C962 /* MemoryLayoutViewController.xib */; };
+		DA608E272519A26E00A3262C /* ResponseChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608E262519A26E00A3262C /* ResponseChainViewController.swift */; };
+		DA608E2B2519A67A00A3262C /* ResponseHitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608E2A2519A67A00A3262C /* ResponseHitView.swift */; };
+		DA608E332519D27700A3262C /* AlgorithmProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA608E322519D27700A3262C /* AlgorithmProtocol.swift */; };
+		DA7A756C252020C9007380E2 /* BWLinked.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A756B252020C9007380E2 /* BWLinked.swift */; };
 		DA7EF6FB24EF73DE00F8AD98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF6FA24EF73DE00F8AD98 /* AppDelegate.swift */; };
 		DA7EF70224EF73DE00F8AD98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7EF70024EF73DE00F8AD98 /* Main.storyboard */; };
 		DA7EF70424EF73E200F8AD98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7EF70324EF73E200F8AD98 /* Assets.xcassets */; };
@@ -55,6 +59,7 @@
 		DA7EF78324F8FABC00F8AD98 /* WebSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF78224F8FABC00F8AD98 /* WebSocketViewController.swift */; };
 		DA7EF78824FCA6F900F8AD98 /* WebSocketExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7EF78624FCA6F900F8AD98 /* WebSocketExample.swift */; };
 		DA7EF78924FCA6F900F8AD98 /* WebSocketExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7EF78724FCA6F900F8AD98 /* WebSocketExample.xib */; };
+		DAC7FBC125187F58007C2879 /* WhyUseCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC7FBC025187F58007C2879 /* WhyUseCopy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +89,10 @@
 		DA073BE02513561000A1C962 /* MemoryLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryLayout.m; sourceTree = "<group>"; };
 		DA073BE2251368A500A1C962 /* MemoryLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLayoutViewController.swift; sourceTree = "<group>"; };
 		DA073BE3251368A500A1C962 /* MemoryLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoryLayoutViewController.xib; sourceTree = "<group>"; };
+		DA608E262519A26E00A3262C /* ResponseChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseChainViewController.swift; sourceTree = "<group>"; };
+		DA608E2A2519A67A00A3262C /* ResponseHitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHitView.swift; sourceTree = "<group>"; };
+		DA608E322519D27700A3262C /* AlgorithmProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmProtocol.swift; sourceTree = "<group>"; };
+		DA7A756B252020C9007380E2 /* BWLinked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWLinked.swift; sourceTree = "<group>"; };
 		DA7EF6F724EF73DE00F8AD98 /* BWNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BWNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7EF6FA24EF73DE00F8AD98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7EF70124EF73DE00F8AD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +135,8 @@
 		DA7EF78224F8FABC00F8AD98 /* WebSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketViewController.swift; sourceTree = "<group>"; };
 		DA7EF78624FCA6F900F8AD98 /* WebSocketExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketExample.swift; sourceTree = "<group>"; };
 		DA7EF78724FCA6F900F8AD98 /* WebSocketExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebSocketExample.xib; sourceTree = "<group>"; };
+		DAC7FBBF25187F58007C2879 /* WhyUseCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhyUseCopy.h; sourceTree = "<group>"; };
+		DAC7FBC025187F58007C2879 /* WhyUseCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhyUseCopy.m; sourceTree = "<group>"; };
 		EB3D28009A3A6F4153498198 /* Pods-BWNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BWNote.release.xcconfig"; path = "Target Support Files/Pods-BWNote/Pods-BWNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +177,8 @@
 				DA05148C2514D4AF00D5BCE7 /* BlockViewController.swift */,
 				DA0514902514D64F00D5BCE7 /* CircularReference.h */,
 				DA0514912514D64F00D5BCE7 /* CircularReference.m */,
+				DAC7FBBF25187F58007C2879 /* WhyUseCopy.h */,
+				DAC7FBC025187F58007C2879 /* WhyUseCopy.m */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -224,6 +237,30 @@
 			path = MemoryLayout;
 			sourceTree = "<group>";
 		};
+		DA608E2525199E3400A3262C /* ResponseChain  */ = {
+			isa = PBXGroup;
+			children = (
+				DA608E262519A26E00A3262C /* ResponseChainViewController.swift */,
+				DA608E2A2519A67A00A3262C /* ResponseHitView.swift */,
+			);
+			path = "ResponseChain ";
+			sourceTree = "<group>";
+		};
+		DA7A74F6251B7619007380E2 /* Muitithreading */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Muitithreading;
+			sourceTree = "<group>";
+		};
+		DA7A756A25201F98007380E2 /* Linked */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A756B252020C9007380E2 /* BWLinked.swift */,
+			);
+			path = Linked;
+			sourceTree = "<group>";
+		};
 		DA7EF6EE24EF73DE00F8AD98 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +282,8 @@
 		DA7EF6F924EF73DE00F8AD98 /* BWNote */ = {
 			isa = PBXGroup;
 			children = (
+				DA7EF72F24EFD8B500F8AD98 /* BWNote-Bridging-Header.h */,
+				DA7EF73F24EFF2D200F8AD98 /* Modules */,
 				DA7EF77A24F89F9300F8AD98 /* Grpc */,
 				DA7EF76E24F4BE2400F8AD98 /* Algorithm */,
 				DA7EF72C24EFD87F00F8AD98 /* OC */,
@@ -322,15 +361,15 @@
 		DA7EF72C24EFD87F00F8AD98 /* OC */ = {
 			isa = PBXGroup;
 			children = (
-				DA7EF73F24EFF2D200F8AD98 /* Module */,
-				DA7EF72F24EFD8B500F8AD98 /* BWNote-Bridging-Header.h */,
 			);
 			path = OC;
 			sourceTree = "<group>";
 		};
-		DA7EF73F24EFF2D200F8AD98 /* Module */ = {
+		DA7EF73F24EFF2D200F8AD98 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A74F6251B7619007380E2 /* Muitithreading */,
+				DA608E2525199E3400A3262C /* ResponseChain  */,
 				DA05148B2514D49A00D5BCE7 /* Block */,
 				DA073BDE251355FC00A1C962 /* MemoryLayout */,
 				DA073B2025130C3800A1C962 /* LoadInit */,
@@ -339,7 +378,7 @@
 				DA7EF75F24F3B4BF00F8AD98 /* PointGrammar */,
 				DA7EF75E24F392D300F8AD98 /* ExchangeMethod */,
 			);
-			path = Module;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		DA7EF75E24F392D300F8AD98 /* ExchangeMethod */ = {
@@ -387,7 +426,9 @@
 		DA7EF76E24F4BE2400F8AD98 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				DA608E322519D27700A3262C /* AlgorithmProtocol.swift */,
 				DA7EF77524F5029600F8AD98 /* AlgorithmViewController.swift */,
+				DA7A756A25201F98007380E2 /* Linked */,
 				DA073AEB2510DC0800A1C962 /* BoyerMoore */,
 				DA073AC6250B7F4100A1C962 /* MergeSort */,
 				DA073AB1250A047C00A1C962 /* BinarySearch */,
@@ -562,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA073B26251311C300A1C962 /* LoadExample1+catgory1.m in Sources */,
+				DA7A756C252020C9007380E2 /* BWLinked.swift in Sources */,
 				DA7EF76D24F3C75000F8AD98 /* AboutCopy.m in Sources */,
 				DA073AC8250B7F6000A1C962 /* BWMergeSort.swift in Sources */,
 				DA7EF6FB24EF73DE00F8AD98 /* AppDelegate.swift in Sources */,
@@ -586,18 +628,22 @@
 				DA7EF77424F4FF0700F8AD98 /* BWQueue.swift in Sources */,
 				DA7EF71324EF9CB800F8AD98 /* HomeViewController.swift in Sources */,
 				DA073BE4251368A500A1C962 /* MemoryLayoutViewController.swift in Sources */,
+				DA608E2B2519A67A00A3262C /* ResponseHitView.swift in Sources */,
 				DA7EF78124F8A04E00F8AD98 /* GrpcViewController.swift in Sources */,
 				DA7EF75D24F36C0500F8AD98 /* SonViewController+hello.m in Sources */,
 				DA7EF71D24EFAFD800F8AD98 /* AppInfoViewController.swift in Sources */,
 				DA7EF75724F36A2E00F8AD98 /* SonViewController.m in Sources */,
 				DA7EF74E24F358B900F8AD98 /* FatherViewController.m in Sources */,
 				DA7EF76924F3BB7B00F8AD98 /* ISAPoint.m in Sources */,
+				DAC7FBC125187F58007C2879 /* WhyUseCopy.m in Sources */,
+				DA608E332519D27700A3262C /* AlgorithmProtocol.swift in Sources */,
 				DA073BE12513561000A1C962 /* MemoryLayout.m in Sources */,
 				DA7EF71824EFA9AE00F8AD98 /* AppListViewController.swift in Sources */,
 				DA7EF77F24F8A00100F8AD98 /* hello.pb.swift in Sources */,
 				DA073B2C2513150100A1C962 /* ChildrenLoadExample1.m in Sources */,
 				DA073AED2510DC2800A1C962 /* BWBoyerMoore.swift in Sources */,
 				DA7EF72924EFC2C700F8AD98 /* RecordTableViewCell.swift in Sources */,
+				DA608E272519A26E00A3262C /* ResponseChainViewController.swift in Sources */,
 				DA073BDD25133E3C00A1C962 /* GrandSonExample1.m in Sources */,
 				DA7EF71B24EFAD5800F8AD98 /* AppInfo.swift in Sources */,
 			);
@@ -757,7 +803,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lean.note;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BWNote/OC/BWNote-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BWNote/BWNote-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -780,7 +826,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lean.note;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BWNote/OC/BWNote-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BWNote/BWNote-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

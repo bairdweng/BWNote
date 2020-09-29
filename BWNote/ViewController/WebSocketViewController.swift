@@ -6,49 +6,53 @@
 //  Copyright © 2020 apple. All rights reserved.
 //
 
-import UIKit
-import Starscream
 import Async
+import Starscream
+import UIKit
 class WebSocketViewController: BaseViewController {
-    var sockets:[WebSocket] = [];
+    var sockets: [WebSocket] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         let sendMessageBtn = UIButton()
         sendMessageBtn.setTitle("+200连接", for: .normal)
         sendMessageBtn.backgroundColor = .red
-        self.view.addSubview(sendMessageBtn)
-        sendMessageBtn.snp.makeConstraints { (make) in
+        view.addSubview(sendMessageBtn)
+        sendMessageBtn.snp.makeConstraints { make in
             make.width.equalTo(100)
             make.height.equalTo(40)
             make.center.equalTo(self.view)
         }
-        sendMessageBtn.rx.tap.subscribe(onNext:{
+        sendMessageBtn.rx.tap.subscribe(onNext: {
             self.sendMessage()
-        }).disposed(by: self.disposeBag)
-        
+        }).disposed(by: disposeBag)
+
         // Do any additional setup after loading the view.
     }
-    func initWebSock()->WebSocket {
+
+    func initWebSock() -> WebSocket {
         var request = URLRequest(url: URL(string: "ws://127.0.0.1:5322/websocket?a=2")!)
         request.timeoutInterval = 5
         let socket = WebSocket(request: request)
-        socket.onEvent = {(event) in
+        socket.onEvent = { _ in
             print("========")
         }
         socket.connect()
         return socket
     }
+
     func sendMessage() {
-        for _ in 0..<1000 {
+        for _ in 0 ..< 1000 {
             sockets.append(initWebSock())
         }
     }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         for sock in sockets {
             sock.disconnect()
         }
     }
+
     /*
      // MARK: - Navigation
      // In a storyboard-based application, you will often want to do a little preparation before navigation

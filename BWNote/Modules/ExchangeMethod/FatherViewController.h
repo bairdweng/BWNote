@@ -11,10 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FatherViewController : UIViewController
--(void)hello;
--(void)hello2;
--(void)printSelf;
--(void)aboutSuper;
+- (void)hello;
+- (void)hello2;
+- (void)printSelf;
+- (void)aboutSuper;
 @end
 
 NS_ASSUME_NONNULL_END

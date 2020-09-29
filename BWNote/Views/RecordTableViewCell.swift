@@ -9,13 +9,13 @@
 import UIKit
 
 class RecordTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var showLabel: UILabel!
-    var model:RecordItem? {
+    @IBOutlet var showLabel: UILabel!
+    var model: RecordItem? {
         didSet {
             showLabel.text = "日期：\(model?.CreatedAt ?? "") \n\n ip：\(model?.ip ?? "")"
         }
     }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,5 +26,4 @@ class RecordTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

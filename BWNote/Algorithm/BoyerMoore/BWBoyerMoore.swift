@@ -8,8 +8,8 @@
 
 import UIKit
 // http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html
-class BWBoyerMoore: NSObject {
-    static func hello() {
+class BWBoyerMoore: NSObject, AlgorithmHello {
+    func hello() {
         //        let str = "Hello, World"
         //        let index1 = str.index(of: "World")?.utf16Offset(in: str)  // 7
         //        print("Hello World 'world' index：\(index1 ?? 0)")
@@ -17,14 +17,15 @@ class BWBoyerMoore: NSObject {
         //        let index2 =   animals.index(of: "🐮")?.utf16Offset(in: animals)  // 6
         //        print("animals '🐮' index：\(index2 ?? 0)")
         let lorem = "Lorem ipsum dolor sit amet"
-        let index3 =  lorem.index(of: "sit", usingHorspoolImprovement: true)?.utf16Offset(in: lorem)  // 18
+        let index3 = lorem.index(of: "sit", usingHorspoolImprovement: true)?.utf16Offset(in: lorem) // 18
         print("Lorem ipsum dolor sit amet 'Lorem' index：\(index3 ?? 0)")
     }
 }
+
 extension String {
-    func index(of pattern:String,usingHorspoolImprovement:Bool = false)->Index? {
+    func index(of pattern: String, usingHorspoolImprovement: Bool = false) -> Index? {
         let patternLength = pattern.count
-        guard patternLength > 0, patternLength <= self.count else {
+        guard patternLength > 0, patternLength <= count else {
             return nil
         }
         // 跳过的列表
@@ -67,7 +68,7 @@ extension String {
             } else {
                 i = index(i, offsetBy: skipTable[c] ?? patternLength, limitedBy: endIndex) ?? endIndex
             }
-        } 
+        }
         return nil
     }
 }

@@ -6,11 +6,11 @@
 //  Copyright © 2020 apple. All rights reserved.
 //
 
-import UIKit
 import gRPC_Swift
 import NIO
 import NIOTransportServices
 import SnapKit
+import UIKit
 class GrpcViewController: BaseViewController {
     let greeter = Helloworld_GreeterClient(channel: ClientConnection.insecure(group: NIOTSEventLoopGroup()).connect(host: "118.89.36.207", port: 50051))
     override func viewDidLoad() {
@@ -19,40 +19,39 @@ class GrpcViewController: BaseViewController {
         let sendMessageBtn = UIButton()
         sendMessageBtn.setTitle("发送消息", for: .normal)
         sendMessageBtn.backgroundColor = .red
-        self.view.addSubview(sendMessageBtn)
-        sendMessageBtn.snp.makeConstraints { (make) in
+        view.addSubview(sendMessageBtn)
+        sendMessageBtn.snp.makeConstraints { make in
             make.width.equalTo(100)
             make.height.equalTo(40)
             make.center.equalTo(self.view)
         }
-        sendMessageBtn.rx.tap.subscribe(onNext:{
+        sendMessageBtn.rx.tap.subscribe(onNext: {
             self.sendMessage()
-        }).disposed(by: self.disposeBag)
-        
+        }).disposed(by: disposeBag)
+
         // Do any additional setup after loading the view.
     }
+
     func sendMessage() {
         let request1 = Helloworld_HelloRequest.with { $0.name = "卧槽你大爷爷" }
-        greeter.sayHello(request1).response.whenComplete { (result) in
+        greeter.sayHello(request1).response.whenComplete { result in
             switch result {
-            case .failure(let error):
+            case let .failure(error):
                 debugPrint(error)
-                
-            case .success(let response):
+
+            case let .success(response):
                 debugPrint(response)
             }
         }
     }
-    
-    
+
     /*
      // MARK: - Navigation
-     
+
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destination.
      // Pass the selected object to the new view controller.
      }
      */
-    
 }

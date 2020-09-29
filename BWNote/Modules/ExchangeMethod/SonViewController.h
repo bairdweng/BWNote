@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SonViewController : FatherViewController
 //-(void)hello;
--(void)openFather;
+- (void)openFather;
 @end
 
 NS_ASSUME_NONNULL_END
