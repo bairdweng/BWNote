@@ -14,21 +14,20 @@
 - (id)init {
   self = [super init];
   if (self) {
-    NSLog(@"LoadExample1: hello my funtion name is 'init',can i help you?");
+    NSLog(@"实力化后会执行这个");
     NSLog(@"someNumber======%d", someNumber);
   }
   return self;
 }
 
 + (void)load {
-  NSLog(@"LoadExample1: This 'load' method is exexuted without instantiation");
+  NSLog(@"load 方法无需实例化就会执行，通常在main函数之前");
 }
 /*
- If there is a category implementation,this method will be overwritten。
- If the subclass is not implementation,why is it exexuted twice.
+  如果类别实现了这个方法，这个方法会被覆盖
  */
 + (void)initialize {
-  NSLog(@"Being exexuted initialize");
+  NSLog(@"如果类别实现了这个方法，这个方法会被覆盖");
   someArray = [[NSMutableArray alloc] init];
 }
 

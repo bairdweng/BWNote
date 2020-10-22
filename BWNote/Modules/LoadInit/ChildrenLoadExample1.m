@@ -11,7 +11,7 @@
 @implementation ChildrenLoadExample1 : LoadExample1
 
 + (void)load {
-  NSLog(@"Hello,my father is LoadExample1, my method name is 'load'");
+  NSLog(@"子类的load方法执行，通常会在父类执行后");
 }
 
 // If there is no implemention, the parent class will replace the implemention.

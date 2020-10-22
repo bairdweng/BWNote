@@ -11,7 +11,7 @@
 @implementation LoadExample1 (catgory1)
 + (void)load {
 
-  NSLog(@"This method is load, my class name is catgory1");
+  NSLog(@"类别执行load1，类别执行的顺序在子类后面");
 }
 // Will overwrite the current class
 //+(void)initialize {

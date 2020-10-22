@@ -123,8 +123,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             AboutCopy().hello()
         case 2:
-            let vc = AlgorithmViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            print("22222")
         case 3:
             let vc = GrpcViewController()
             navigationController?.pushViewController(vc, animated: true)

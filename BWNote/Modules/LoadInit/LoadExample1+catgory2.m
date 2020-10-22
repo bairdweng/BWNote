@@ -11,7 +11,7 @@
 @implementation LoadExample1 (catgory2)
 
 + (void)load {
-  NSLog(@"This method is load, my class name is catgory2");
+    NSLog(@"类别执行load2，多个类别的情况，load的顺序取决于compile sources");
 }
 // Will overwrite the current class The order of coverage depends on compile
 // Sources

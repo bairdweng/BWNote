@@ -46,7 +46,7 @@ int b = 0;
   NSLog(@"str=%p", &str);
 }
 
-/// Here will call the set method of name, there are multiple threads releasing at the same time.
+/// 这里调用set方法，多线程的情况下，可能会被释放多次
 - (void)whyWillCrach {
   NSLog(@"whyWillCrach");
   dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
@@ -57,7 +57,7 @@ int b = 0;
   }
 }
 
-/// This is a Tagged Pointer, No need to call set method, So it won't crash
+/// 这个是一个标记指针，无需调用set方法。小数据的存储可以直接存放在指针
 - (void)whyNotCrash {
   NSLog(@"whyNotCrash");
   dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
